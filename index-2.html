@@ -1,0 +1,118 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>AttendIQ</title><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:monospace;background:#070710;color:#f0f0ff;padding-bottom:40px}nav{padding:16px 20px;background:rgba(7,7,16,.95);border-bottom:1px solid #1e1e30;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:99}.logo{font-size:20px;font-weight:800}.logo span{color:#6c63ff}.wrap{max-width:460px;margin:0 auto;padding:0 16px}.hero{padding:24px 0 18px;text-align:center}.hero h1{font-size:30px;font-weight:800;line-height:1.1;margin-bottom:8px}.hero h1 em{color:#6c63ff;font-style:normal}.hero p{font-size:12px;color:#5a5a7a;line-height:1.8}.card{background:#0f0f1a;border:1px solid #1e1e30;border-radius:16px;padding:20px;margin-bottom:14px;position:relative;overflow:hidden}.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#6c63ff,#a78bfa,#39ffa0)}.ig{display:flex;flex-direction:column;margin-bottom:12px}.ig label{font-size:10px;letter-spacing:2px;color:#5a5a7a;text-transform:uppercase;margin-bottom:6px}.ig input{background:#141420;border:1px solid #1e1e30;color:#f0f0ff;padding:13px 14px;border-radius:10px;font-family:monospace;font-size:14px;outline:none;width:100%}.ig input:focus{border-color:#6c63ff}.pw{position:relative}.pw input{padding-right:46px}.eye{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:#5a5a7a;cursor:pointer;font-size:15px}.perm{display:flex;gap:12px;align-items:flex-start;background:rgba(108,99,255,.06);border:1px solid rgba(108,99,255,.15);border-radius:10px;padding:13px;margin-bottom:16px;cursor:pointer}.perm input[type=checkbox]{appearance:none;width:17px;height:17px;border:2px solid #1e1e30;border-radius:4px;flex-shrink:0;margin-top:2px;cursor:pointer;position:relative;transition:all .2s}.perm input[type=checkbox]:checked{background:#6c63ff;border-color:#6c63ff}.perm input[type=checkbox]:checked::after{content:'✓';position:absolute;color:#fff;font-size:10px;top:50%;left:50%;transform:translate(-50%,-50%);font-weight:700}.pt{font-size:11px;color:#5a5a7a;line-height:1.7}.pt strong{color:#f0f0ff}.btn{width:100%;background:#6c63ff;color:#fff;border:none;padding:15px;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;font-family:monospace;transition:all .2s}.btn:disabled{opacity:.35;cursor:not-allowed}.err{display:none;background:rgba(255,77,109,.08);border:1px solid rgba(255,77,109,.2);border-radius:10px;padding:12px;font-size:12px;color:#ff4d6d;margin-top:12px}.err.show{display:block}.load{display:none;position:fixed;inset:0;background:rgba(7,7,16,.95);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:14px}.load.show{display:flex}.spin{width:48px;height:48px;border:3px solid #1e1e30;border-top-color:#6c63ff;border-radius:50%;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.lt{font-size:13px;letter-spacing:3px}.steps{display:flex;flex-direction:column;gap:7px}.step{font-size:11px;color:#1e1e30;display:flex;align-items:center;gap:8px;transition:color .3s}.step.done{color:#39ffa0}.step.active{color:#f0f0ff}.sd{width:5px;height:5px;border-radius:50%;background:currentColor;flex-shrink:0}.dash{display:none}.dash.show{display:block}.ov{background:#0f0f1a;border:1px solid #1e1e30;border-radius:16px;padding:20px;text-align:center;margin-bottom:14px;position:relative;overflow:hidden}.ov::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#6c63ff,#39ffa0)}.big{font-size:58px;font-weight:800;line-height:1;letter-spacing:-3px;margin-bottom:4px}.olbl{font-size:10px;letter-spacing:3px;color:#5a5a7a;margin-bottom:16px}.srow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}.sb{background:#141420;border-radius:10px;padding:10px 6px;text-align:center;border:1px solid #1e1e30}.sv{font-size:19px;font-weight:700;margin-bottom:2px}.sl{font-size:9px;color:#5a5a7a;letter-spacing:1.5px;text-transform:uppercase}.sbar{border-radius:10px;padding:11px 13px;font-size:12px;line-height:1.6}.ss{background:rgba(57,255,160,.07);border:1px solid rgba(57,255,160,.2);color:#39ffa0}.sw{background:rgba(255,209,102,.07);border:1px solid rgba(255,209,102,.2);color:#ffd166}.sd2{background:rgba(255,77,109,.07);border:1px solid rgba(255,77,109,.2);color:#ff4d6d}.shdr{display:flex;align-items:center;justify-content:space-between;margin:16px 0 10px}.stitle{font-size:15px;font-weight:800}.sc{background:#0f0f1a;border:1px solid #1e1e30;border-radius:14px;margin-bottom:9px;overflow:hidden;animation:fu .35s ease both}@keyframes fu{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.sh{padding:14px;display:flex;align-items:center;gap:10px;cursor:pointer}.si{width:35px;height:35px;border-radius:9px;background:rgba(108,99,255,.1);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}.sn{font-size:12px;font-weight:700;margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.sm{font-size:9px;color:#5a5a7a}.bt{flex:1;height:4px;background:#1e1e30;border-radius:4px;overflow:hidden;margin-top:4px}.bf{height:100%;border-radius:4px;width:0%;transition:width 1s cubic-bezier(.22,1,.36,1)}.sp{font-size:18px;font-weight:700;flex-shrink:0;width:48px;text-align:right}.se{display:none;border-top:1px solid #1e1e30;padding:13px;background:#141420}.se.open{display:block}.eg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px}.eb{background:#0f0f1a;border-radius:9px;padding:9px 5px;text-align:center;border:1px solid #1e1e30}.ev{font-size:17px;font-weight:700;margin-bottom:2px}.el{font-size:9px;color:#5a5a7a;letter-spacing:1px;text-transform:uppercase}.av{border-radius:9px;padding:10px 12px;font-size:11px;line-height:1.7}.as{background:rgba(57,255,160,.07);border:1px solid rgba(57,255,160,.15);color:#39ffa0}.aw{background:rgba(255,209,102,.07);border:1px solid rgba(255,209,102,.15);color:#ffd166}.ad{background:rgba(255,77,109,.07);border:1px solid rgba(255,77,109,.15);color:#ff4d6d}.vbtn{width:100%;background:rgba(108,99,255,.1);color:#6c63ff;border:1px solid rgba(108,99,255,.2);padding:9px;border-radius:8px;font-family:monospace;font-size:11px;cursor:pointer;margin-top:8px}.disc{width:100%;background:transparent;color:#ff4d6d;border:1px solid rgba(255,77,109,.2);padding:12px;border-radius:10px;font-family:monospace;font-size:12px;cursor:pointer;margin-top:12px}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:#141420;border:1px solid #1e1e30;color:#f0f0ff;padding:10px 20px;border-radius:20px;font-size:12px;z-index:300;transition:transform .3s cubic-bezier(.22,1,.36,1);white-space:nowrap}.toast.show{transform:translateX(-50%) translateY(0)}.dpage{display:none;position:fixed;inset:0;background:#070710;z-index:400;overflow-y:auto}.dpage.show{display:block}.dnav{position:sticky;top:0;background:rgba(7,7,16,.95);border-bottom:1px solid #1e1e30;padding:14px 20px;display:flex;align-items:center;gap:12px}.dbk{background:none;border:none;color:#6c63ff;font-size:13px;cursor:pointer;font-family:monospace}.dtitle{font-size:14px;font-weight:700;flex:1}.drow{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;border-bottom:1px solid #1e1e30;font-size:12px}.drow:last-child{border-bottom:none}.dp{color:#39ffa0;font-weight:700}.da{color:#ff4d6d;font-weight:700}.dhdr{padding:12px 20px;font-size:10px;letter-spacing:2px;border-bottom:1px solid #1e1e30;border-top:1px solid #1e1e30}</style></head><body>
+<nav><div class="logo">Attend<span>IQ</span></div><span style="font-size:10px;color:#5a5a7a">AGC 2025</span></nav>
+<div class="load" id="load"><div class="spin"></div><div class="lt">SYNCING PORTAL</div><div class="steps" id="steps"></div></div>
+<div class="toast" id="toast"></div>
+<div class="dpage" id="dpage"><div class="dnav"><button class="dbk" onclick="document.getElementById('dpage').classList.remove('show')">← Back</button><div class="dtitle" id="dtitle"></div></div><div id="dlist"></div></div>
+<div class="wrap">
+<div class="hero"><h1>Your AGC<br><em>attendance,</em><br>auto-fetched.</h1><p>Logs into agclms.in with your credentials and shows all subject percentages instantly.</p></div>
+<div class="card">
+<div class="ig"><label>Student ID / Uni Roll No</label><input type="text" id="roll" placeholder="" autocomplete="username"/></div>
+<div class="ig"><label>Password</label><div class="pw"><input type="password" id="pw" placeholder="Your AGC portal password" autocomplete="current-password"/><button class="eye" onclick="tpw()">👁</button></div></div>
+<label class="perm" for="cb"><input type="checkbox" id="cb" onchange="ub()"/><div class="pt"><strong>I allow read-only access to fetch my attendance.</strong> Password is never stored — used only for this session.</div></label>
+<button class="btn" id="btn" onclick="sync()" disabled>🔗 Fetch My Attendance</button>
+<div class="err" id="err"></div></div>
+<div class="dash" id="dash">
+<div class="ov"><div class="big" id="oP">—</div><div class="olbl">OVERALL ATTENDANCE</div><div class="srow"><div class="sb"><div class="sv" id="sP" style="color:#39ffa0">—</div><div class="sl">Present</div></div><div class="sb"><div class="sv" id="sA" style="color:#ff4d6d">—</div><div class="sl">Absent</div></div><div class="sb"><div class="sv" id="sT">—</div><div class="sl">Total</div></div></div><div class="sbar ss" id="sBar">—</div></div>
+<div class="shdr"><div class="stitle" id="secT">Subjects</div></div>
+<div id="sList"></div>
+<button class="disc" onclick="disc()">✕ Disconnect</button>
+</div></div>
+<script>
+const CL={safe:"#39ffa0",warn:"#ffd166",danger:"#ff4d6d"};
+const IC={theory:"📘",lab:"🔬",tutorial:"📖",combined:"📊"};
+let S=[],oId=null;
+const pc=(p,t)=>t?Math.round(p/t*100):0;
+const ss=p=>p>=85?"safe":p>=75?"warn":"danger";
+const csk=(p,t)=>Math.max(0,Math.floor(p/0.75)-t);
+const nm=(p,t)=>Math.max(0,Math.ceil((0.75*t-p)/0.25));
+function ub(){document.getElementById("btn").disabled=!document.getElementById("cb").checked;}
+function tpw(){const i=document.getElementById("pw");i.type=i.type==="password"?"text":"password";}
+function toast(m){const e=document.getElementById("toast");e.textContent=m;e.classList.add("show");setTimeout(()=>e.classList.remove("show"),2500);}
+function showErr(m){const e=document.getElementById("err");e.textContent=m;e.classList.add("show");setTimeout(()=>e.classList.remove("show"),5000);}
+function showD(id){
+  const s=S.find(x=>x.id===id);if(!s)return;
+  document.getElementById("dtitle").textContent=s.name;
+  const dl=document.getElementById("dlist");
+  let html="";
+  if(s.type==="combined"){
+    const th=S.find(x=>x.type==="theory"&&x.name===s.name.replace(" (Combined)",""));
+    const tu=S.find(x=>x.type==="tutorial"&&x.name===s.name.replace(" (Combined)"," (Tutorial)"));
+    const tdd=th?th.dates||[]:[]; const tud=tu?tu.dates||[]:[]; 
+    html+="<div class='dhdr' style='color:#6c63ff'>📘 THEORY</div>";
+    html+=tdd.length?tdd.map(d=>"<div class='drow'><span>"+d.date+"</span><span class='"+(d.status==="PRESENT"?"dp":"da")+"'>"+d.status+"</span></div>").join(""):"<p style='color:#5a5a7a;text-align:center;padding:16px'>No data</p>";
+    html+="<div class='dhdr' style='color:#39ffa0'>📖 TUTORIAL</div>";
+    html+=tud.length?tud.map(d=>"<div class='drow'><span>"+d.date+"</span><span class='"+(d.status==="PRESENT"?"dp":"da")+"'>"+d.status+"</span></div>").join(""):"<p style='color:#5a5a7a;text-align:center;padding:16px'>No data</p>";
+  }else{
+    const dates=s.dates||[];
+    html=dates.length?dates.map(d=>"<div class='drow'><span>"+d.date+"</span><span class='"+(d.status==="PRESENT"?"dp":"da")+"'>"+d.status+"</span></div>").join(""):"<p style='color:#5a5a7a;text-align:center;padding:30px'>No data</p>";
+  }
+  dl.innerHTML=html;
+  document.getElementById("dpage").classList.add("show");
+}
+async function sync(){
+  const roll=document.getElementById("roll").value.trim();
+  const pw=document.getElementById("pw").value;
+  if(!roll||!pw){showErr("Enter roll number and password.");return;}
+  const load=document.getElementById("load");load.classList.add("show");
+  const steps=["Connecting to agclms.in...","Loading login page...","Authenticating...","Fetching subject list...","Reading attendance...","Computing percentages...","Done ✓"];
+  const sl=document.getElementById("steps");
+  sl.innerHTML=steps.map((s,i)=>"<div class='step' id='s"+i+"'><div class='sd'></div>"+s+"</div>").join("");
+  let si=0;const iv=setInterval(()=>{if(si>0)document.getElementById("s"+(si-1)).classList.add("done");if(si<steps.length)document.getElementById("s"+si).classList.add("active");si++;},800);
+  try{
+    const res=await fetch("/api/sync",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({roll,password:pw})});
+    const data=await res.json();
+    clearInterval(iv);steps.forEach((_,i)=>document.getElementById("s"+i).classList.add("done"));
+    await new Promise(r=>setTimeout(r,500));load.classList.remove("show");
+    if(!data.success){showErr(data.error||"Something went wrong.");return;}
+    S=data.subjects;onConn(data.student||roll);
+  }catch(e){clearInterval(iv);load.classList.remove("show");showErr("Connection failed. Is attendiq.py running?");}
+}
+function onConn(name){
+  document.getElementById("dash").classList.add("show");
+  rOv();rSubs();
+  setTimeout(()=>document.getElementById("dash").scrollIntoView({behavior:"smooth",block:"start"}),300);
+  toast("✓ Synced as "+name);
+  document.getElementById("err").classList.remove("show");
+}
+function disc(){
+  S=[];document.getElementById("dash").classList.remove("show");
+  document.getElementById("roll").value="";document.getElementById("pw").value="";
+  document.getElementById("cb").checked=false;document.getElementById("btn").disabled=true;
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+function rOv(){
+  let tp=0,tt=0;S.forEach(s=>{tp+=s.present;tt+=s.total;});
+  const p=pc(tp,tt),sv=ss(p);
+  document.getElementById("oP").textContent=tt?p+"%":"—";
+  document.getElementById("oP").style.color=tt?CL[sv]:"#f0f0ff";
+  document.getElementById("sP").textContent=tp;
+  document.getElementById("sA").textContent=tt-tp;
+  document.getElementById("sT").textContent=tt;
+  document.getElementById("secT").textContent="Subjects ("+S.length+")";
+  const sk=csk(tp,tt);let msg="",cls="ss";
+  if(sv==="safe"){msg="✓ Safe! Can miss "+sk+" more class"+(sk!==1?"es":"")+" overall.";}
+  else if(sv==="warn"){msg="⚠ Borderline — "+sk+" skip"+(sk!==1?"s":"")+" left before 75%.";cls="sw";}
+  else{msg="✗ Below 75%! Attend next "+nm(tp,tt)+" classes to recover.";cls="sd2";}
+  document.getElementById("sBar").textContent=msg;
+  document.getElementById("sBar").className="sbar "+cls;
+}
+function tog(id){
+  const el=document.getElementById("ex_"+id);if(!el)return;
+  if(oId&&oId!==id){const p=document.getElementById("ex_"+oId);if(p)p.classList.remove("open");}
+  el.classList.toggle("open");oId=el.classList.contains("open")?id:null;
+}
+function rSubs(){
+  const list=document.getElementById("sList");list.innerHTML="";
+  S.forEach((s,i)=>{
+    const p=pc(s.present,s.total),sv=ss(p),sk=csk(s.present,s.total),n=nm(s.present,s.total);
+    let adv="",ac="";
+    if(sv==="safe"){adv="✓ Safe! Can miss <strong>"+sk+" more</strong> and stay above 75%.";ac="as";}
+    else if(sv==="warn"){adv="⚠ Only <strong>"+sk+" skip"+(sk!==1?"s":"")+"</strong> remaining.";ac="aw";}
+    else{adv="✗ Need <strong>"+n+" consecutive class"+(n!==1?"es":"")+"</strong> to hit 75%.";ac="ad";}
+    const card=document.createElement("div");card.className="sc";card.style.animationDelay=(i*0.05)+"s";
+    card.innerHTML="<div class='sh' onclick='tog("+s.id+")'><div class='si'>"+(IC[s.type]||"📗")+"</div><div style='flex:1;min-width:0'><div class='sn'>"+s.name+"</div><div class='sm'>"+s.type.toUpperCase()+" · "+s.total+" classes</div><div class='bt'><div class='bf' id='f_"+s.id+"' style='background:"+CL[sv]+"'></div></div></div><div class='sp' style='color:"+CL[sv]+"'>"+p+"%</div></div><div class='se' id='ex_"+s.id+"'><div class='eg'><div class='eb'><div class='ev' style='color:#39ffa0'>"+s.present+"</div><div class='el'>Present</div></div><div class='eb'><div class='ev' style='color:#ff4d6d'>"+(s.total-s.present)+"</div><div class='el'>Absent</div></div><div class='eb'><div class='ev' style='color:#ffd166'>"+sk+"</div><div class='el'>Can Skip</div></div></div><div class='av "+ac+"'>"+adv+"</div><button class='vbtn' onclick='showD("+s.id+")'>📅 View Attendance</button></div>";
+    list.appendChild(card);
+    setTimeout(()=>{const f=document.getElementById("f_"+s.id);if(f)f.style.width=p+"%";},80+i*50);
+  });
+}
+</script></body></html>
